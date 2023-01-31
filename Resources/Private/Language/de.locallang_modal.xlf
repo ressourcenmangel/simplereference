@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:simplereference/Resources/Private/Language/locallang_layout.xlf" date="2022-02-02T20:22:32Z" product-name="simplereference">
+        <header/>
+        <body>
+            <trans-unit id="simplereference.modal.title">
+                <target>Referenz einfügen</target>
+            </trans-unit>
+            <trans-unit id="simplereference.modal.text">
+                <target>Soll eine Referenz an dieser Position eingefügt werden?</target>
+            </trans-unit>
+            <trans-unit id="simplereference.modal.button.cancel">
+                <target>Abbrechen</target>
+            </trans-unit>
+            <trans-unit id="simplereference.modal.button.paste">
+                <target>Einfügen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,50 @@
+{
+    "name": "ressourcenmangel/simplereference",
+    "type": "typo3-cms-extension",
+    "description": "Add paste reference button next to paste copy button",
+    "authors": [
+        {
+            "name": "Matthias Kappenberg",
+            "email": "matthias.kappenberg@ressourcenmangel.de",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^10.4 || ^11.5"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^6.8"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ressourcenmangel\\Simplereference\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ressourcenmangel\\Simplereference\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/simplereference": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "simplereference"
+        }
+    }
+}
